@@ -1,0 +1,181 @@
+// Форма
+.form__title {
+  display: block;
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+
+  &-lable {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus-within > &-lable,
+  &-inpute:not(:placeholder-shown) + &-lable {
+    transform: translate(-28px, -38px) scale(0.86);
+
+    color: $accent-color;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    fill: $title-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-inpute:focus ~ &-icon {
+    fill: $accent-color;
+  }
+
+  &-inpute {
+    padding: 12px 16px 12px 42px;
+
+    border: 1px solid;
+    border-color: $form-field-border-color;
+    border-radius: 4px;
+    outline-style: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: $title-text-color;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.form__comment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &-field {
+    height: 120px;
+    padding: 12px 16px;
+
+    border: 1px solid $form-field-border-color;
+    border-radius: 4px;
+    outline-style: none;
+
+    color: $primary-text-color;
+
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+
+  &-lable {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus-within > &-lable,
+  &-inpute:not(:placeholder-shown) + &-lable {
+    transform: translate(-5px, -30px) scale(0.86);
+
+    color: $accent-color;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.agreement {
+  display: flex;
+  margin-bottom: 30px;
+
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &__link {
+    color: $accent-color;
+    margin-left: 2px;
+  }
+}
+
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &__icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 13px;
+    margin-right: 8px;
+
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    fill: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:checked + &__icon {
+    border: none;
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}

@@ -1,0 +1,46 @@
+/* Our possibilities */
+
+.possibilities {
+  &.list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 370px;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    &-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      padding-top: 27px;
+      padding-bottom: 27px;
+
+      background-color: $overlay-color;
+    }
+  }
+}
