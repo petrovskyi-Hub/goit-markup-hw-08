@@ -1,19 +1,14 @@
 .work-examples {
   margin-top: 34px;
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color: turquoise; */
-    margin: -15px;
-  }
 }
 
 .card {
-  width: 370px;
-  margin: 15px;
-
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   &:hover,
   &:focus {
@@ -72,6 +67,7 @@
 
   &__image {
     display: block;
+    width: 100%;
   }
 
   &__content {
