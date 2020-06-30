@@ -2,16 +2,19 @@
 
 .clients {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  &__item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 175px;
     height: 90px;
-
     color: $grey-logo-color;
     border: solid;
     border-width: 1px;

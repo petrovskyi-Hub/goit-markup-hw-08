@@ -12,7 +12,12 @@
 .header-line {
   border-bottom: 1px solid $section-border-color;
 }
+
 .container.header {
-  display: flex;
-  align-items: center;
+  position: relative;
+
+  padding: 16px 15px;
+
+  // display: flex;
+  // align-items: center;
 }

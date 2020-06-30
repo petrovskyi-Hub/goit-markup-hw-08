@@ -1,36 +1,27 @@
 /* Our Benefits */
 .benefits {
-  &.section {
-    padding-bottom: 0px;
-  }
-
-  &.container {
-    padding-bottom: 94px;
-    border-bottom: 1px solid $section-border-color;
-  }
-
-  &.list {
-    display: flex;
+  & .title {
+    text-align: center;
   }
 
   &-item {
-    width: 270px;
-
-    &:not(:first-child) {
-      margin-left: auto;
+    &:not(:last-child) {
+      padding-bottom: 30px;
     }
 
     &__icon {
       display: flex;
-      width: 270px;
+      max-width: 450px;
+      width: 100%;
       height: 120px;
       margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
 
       justify-content: center;
       align-items: center;
 
       background-color: $special-section-bg-color;
-
       border-radius: 4px;
     }
   }

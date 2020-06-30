@@ -1,6 +1,9 @@
 /* Our possibilities */
 
 .possibilities {
+  &.section {
+    display: none;
+  }
   &.list {
     display: flex;
     justify-content: space-between;

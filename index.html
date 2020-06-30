@@ -18,11 +18,10 @@
     <!-- Шапка сайта -->
     <header class="page-header header-line">
       <div class="container header">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo link">
-            <span class="logo-accent">Web</span> Studio</a
-          >
-
+        <a href="./index.html" class="logo link">
+          <span class="logo-accent">Web</span> Studio</a
+        >
+        <div class="menu-container" id="menu-container" data-menu>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link current">Студия</a>
@@ -34,27 +33,51 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="contacts__list list">
-            <li class="contacts__item">
-              <a class="contacts__link link" href="mailto:info@devstudio.com">
-                <svg class="contacts__icon" width="16" height="16">
-                  <use href="./images/sprite-min.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link link" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/sprite-min.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
+
+          <address class="contacts">
+            <ul class="contacts__list list">
+              <li class="contacts__item">
+                <a class="contacts__link link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="16">
+                    <use href="./images/sprite-min.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link link" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/sprite-min.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/sprite-min.svg#close-40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/sprite-min.svg#mobile-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -124,10 +147,10 @@
               <svg class="checkbox__icon" width="15" height="15">
                 <use href="./images/sprite-min.svg#form-check-icon"></use>
               </svg>
-              <span class="agreement__lable"
-                >Соглашаюсь с рассылкой и принимаю
-              </span>
-              <a class="agreement__link" href="">Условия договора</a>
+              <span class="agreement__lable">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="agreement__link" href="">Условия договора</a></span
+              >
             </label>
 
             <button class="button suubmit-button" type="submit">
@@ -201,7 +224,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="section">
+      <section class="possibilities section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="possibilities list">
@@ -210,6 +233,7 @@
                 <img
                   class="possibilities__image"
                   src="./images/laptop.jpg"
+                  loading="lazy"
                   width="370"
                   height="294"
                   alt="Ноутбук"
@@ -224,6 +248,7 @@
                 <img
                   class="possibilities__image"
                   src="./images/phone.jpg"
+                  loading="lazy"
                   width="370"
                   height="294"
                   alt="Смартфон"
@@ -238,6 +263,7 @@
                 <img
                   class="possibilities__image"
                   src="./images/design.jpg"
+                  loading="lazy"
                   width="370"
                   height="294"
                   alt="Десктопное приложение"
@@ -260,7 +286,12 @@
             <li class="worker">
               <img
                 class="worker__img"
-                src="./images/John-Smith.jpg"
+                srcset="
+                  ./images/nic-kucher-mob-480.jpg 1x,
+                  ./images/nic-kucher-mob-960.jpg 2x
+                "
+                src="./images/nic-kucher-mob-480.jpg"
+                loading="lazy"
                 alt="Фото John Smith"
               />
               <div class="worker__card-content">
@@ -306,7 +337,12 @@
             <li class="worker">
               <img
                 class="worker__img"
-                src="./images/Marta-Stewart.jpg"
+                srcset="
+                  ./images/o-ivanova-mob-480.jpg 1x,
+                  ./images/o-ivanova-mob-960.jpg 2x
+                "
+                src="./images/o-ivanova-mob-480.jpg"
+                loading="lazy"
                 alt="Фото Marta Stewart"
               />
               <div class="worker__card-content">
@@ -352,7 +388,12 @@
             <li class="worker">
               <img
                 class="worker__img"
-                src="./images/Robert-Jakis.jpg"
+                srcset="
+                  ./images/a-shevch-mob-480.jpg 1x,
+                  ./images/a-shevch-mob-960.jpg 2x
+                "
+                src="./images/a-shevch-mob-480.jpg"
+                loading="lazy"
                 alt="Фото Robert Jakis"
               />
               <div class="worker__card-content">
@@ -398,7 +439,12 @@
             <li class="worker">
               <img
                 class="worker__img"
-                src="./images/Martin-Doe.jpg"
+                srcset="
+                  ./images/i-nicol-mob-480.jpg 1x,
+                  ./images/i-nicol-mob-960.jpg 2x
+                "
+                src="./images/i-nicol-mob-480.jpg"
+                loading="lazy"
                 alt="Фото Martin Doe"
               />
               <div class="worker__card-content">
@@ -602,6 +648,9 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+
+    <!-- Mobile menu script -->
+    <script src="./js/menu.js"></script>
 
     <!-- Modal script -->
     <script src="./js/modal.js"></script>

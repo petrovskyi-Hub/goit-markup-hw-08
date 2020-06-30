@@ -6,7 +6,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: $title-text-color;
 }
@@ -133,22 +133,18 @@ textarea {
 
   align-items: center;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 
   &__link {
     color: $accent-color;
-    margin-left: 2px;
+    // margin-left: 2px;
   }
 }
 
 .checkbox {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute; */
-
   position: absolute;
   width: 1px;
   height: 1px;
@@ -162,7 +158,6 @@ textarea {
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-left: 13px;
     margin-right: 8px;
 
     border: 2px solid $title-text-color;
