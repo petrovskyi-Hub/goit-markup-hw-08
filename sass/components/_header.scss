@@ -5,7 +5,6 @@
   top: 0;
   left: 0;
   z-index: 900;
-
   background-color: $primary-white-color;
 }
 
@@ -14,10 +13,12 @@
 }
 
 .container.header {
-  position: relative;
-
+  // position: relative;
   padding: 16px 15px;
 
-  // display: flex;
-  // align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+  }
 }

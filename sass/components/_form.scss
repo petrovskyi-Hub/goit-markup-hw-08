@@ -134,13 +134,12 @@ textarea {
   align-items: center;
 
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 
   &__link {
     color: $accent-color;
-    // margin-left: 2px;
   }
 }
 
@@ -155,7 +154,6 @@ textarea {
   overflow: hidden;
 
   &__icon {
-    display: inline-block;
     width: 15px;
     height: 15px;
     margin-right: 8px;
