@@ -142,6 +142,7 @@ body {
 }
 
 .container.header {
+  position: relative;
   padding: 16px 15px;
 }
 
@@ -704,12 +705,33 @@ textarea {
 }
 
 /* Our Benefits */
+@media screen and (min-width: 768px) {
+  .benefits.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .benefits .title {
   text-align: center;
 }
 
-.benefits-item:not(:last-child) {
-  padding-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 .benefits-item__icon {
@@ -785,6 +807,17 @@ textarea {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .team.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .worker {
   max-width: 450px;
   width: 100%;
@@ -795,8 +828,18 @@ textarea {
   text-align: center;
 }
 
-.worker:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .worker:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .worker {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 .worker__img {
@@ -894,6 +937,13 @@ textarea {
   margin: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+}
+
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -929,6 +979,17 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer-titles {
@@ -973,6 +1034,12 @@ textarea {
 .social-box {
   margin-top: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social-box {
+    margin-top: 0;
+  }
 }
 
 .social-list {
@@ -1022,6 +1089,7 @@ textarea {
 
 .subscribe__field-inpute {
   width: 100%;
+  max-width: 450px;
   padding: 15px 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

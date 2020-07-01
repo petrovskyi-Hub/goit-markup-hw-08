@@ -1,12 +1,27 @@
 /* Our Benefits */
 .benefits {
+  &.list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
   & .title {
     text-align: center;
   }
 
   &-item {
-    &:not(:last-child) {
-      padding-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
 
     &__icon {
