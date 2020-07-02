@@ -2,7 +2,6 @@
 .form__title {
   display: block;
   margin-bottom: 30px;
-
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -22,14 +21,11 @@
     top: 50%;
     left: 42px;
     transform: translateY(-50%);
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-
     color: $primary-text-color;
-
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -37,7 +33,6 @@
   &:focus-within > &-lable,
   &-inpute:not(:placeholder-shown) + &-lable {
     transform: translate(-28px, -38px) scale(0.86);
-
     color: $accent-color;
   }
 
@@ -46,9 +41,7 @@
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-
     fill: $title-text-color;
-
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -58,19 +51,15 @@
 
   &-inpute {
     padding: 12px 16px 12px 42px;
-
     border: 1px solid;
     border-color: $form-field-border-color;
     border-radius: 4px;
     outline-style: none;
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-
     color: $title-text-color;
-
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus {
@@ -88,11 +77,9 @@
   &-field {
     height: 120px;
     padding: 12px 16px;
-
     border: 1px solid $form-field-border-color;
     border-radius: 4px;
     outline-style: none;
-
     color: $primary-text-color;
 
     &:focus {
@@ -104,21 +91,17 @@
     position: absolute;
     top: 12px;
     left: 16px;
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-
     color: $primary-text-color;
-
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:focus-within > &-lable,
   &-inpute:not(:placeholder-shown) + &-lable {
     transform: translate(-5px, -30px) scale(0.86);
-
     color: $accent-color;
   }
 }
@@ -132,11 +115,14 @@ textarea {
   display: inline-block;
   margin-bottom: 30px;
   padding-left: 23px;
-  // align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
 
   &__link {
     color: $accent-color;
@@ -160,12 +146,9 @@ textarea {
     display: inline-block;
     width: 15px;
     height: 15px;
-    // margin-right: 8px;
-
     border: 2px solid $title-text-color;
     border-radius: 2px;
     fill: none;
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

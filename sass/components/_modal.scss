@@ -48,6 +48,10 @@
     transform: translate(-50%, -50%) scale(1);
   }
 
+  @media (min-width: 1200px) {
+    max-width: 528px;
+  }
+
   @media (max-height: 650px) {
     top: 80px;
     transform: translateX(-50%) scale(1);

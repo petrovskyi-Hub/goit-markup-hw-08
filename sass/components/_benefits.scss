@@ -24,6 +24,11 @@
       margin: 15px;
     }
 
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+
     &__icon {
       display: flex;
       max-width: 450px;
