@@ -41,6 +41,12 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .menu-button {
   position: absolute;
   top: 10px;
@@ -269,16 +275,29 @@ body {
   }
 }
 
-.contacts__item:not(:last-child) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 16px;
+@media (min-width: 1200px) {
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media (max-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -648,13 +667,10 @@ textarea {
 }
 
 .agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  display: inline-block;
   margin-bottom: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-left: 23px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -677,9 +693,12 @@ textarea {
 }
 
 .checkbox__icon {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: inline-block;
   width: 15px;
   height: 15px;
-  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
   fill: none;

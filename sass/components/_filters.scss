@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -15px;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
   }
 
   &__item {

@@ -128,11 +128,11 @@ textarea {
 }
 
 .agreement {
-  display: flex;
+  position: relative;
+  display: inline-block;
   margin-bottom: 30px;
-
-  align-items: center;
-
+  padding-left: 23px;
+  // align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -154,9 +154,13 @@ textarea {
   overflow: hidden;
 
   &__icon {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: inline-block;
     width: 15px;
     height: 15px;
-    margin-right: 8px;
+    // margin-right: 8px;
 
     border: 2px solid $title-text-color;
     border-radius: 2px;
