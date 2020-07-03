@@ -232,7 +232,11 @@
               <a href="" class="possibilities__link link">
                 <img
                   class="possibilities__image"
-                  src="./images/laptop.jpg"
+                  src="./images/laptop-294.jpg"
+                  srcset="
+                    ./images/laptop-294.jpg 1x,
+                    ./images/laptop-588.jpg 2x
+                  "
                   loading="lazy"
                   width="370"
                   height="294"
@@ -247,7 +251,8 @@
               <a href="" class="possibilities__link link">
                 <img
                   class="possibilities__image"
-                  src="./images/phone.jpg"
+                  src="./images/phone-294.jpg"
+                  srcset="./images/phone-294.jpg 1x, ./images/phone-588.jpg 2x"
                   loading="lazy"
                   width="370"
                   height="294"
@@ -262,7 +267,11 @@
               <a href="" class="possibilities__link link">
                 <img
                   class="possibilities__image"
-                  src="./images/design.jpg"
+                  src="./images/design-294.jpg"
+                  srcset="
+                    ./images/design-294.jpg 1x,
+                    ./images/design-588.jpg 2x
+                  "
                   loading="lazy"
                   width="370"
                   height="294"
@@ -284,16 +293,36 @@
           <ul class="team list">
             <!-- Николай Кучеренко -->
             <li class="worker">
-              <img
-                class="worker__img"
-                srcset="
-                  ./images/nic-kucher-mob-480.jpg 1x,
-                  ./images/nic-kucher-mob-960.jpg 2x
-                "
-                src="./images/nic-kucher-mob-480.jpg"
-                loading="lazy"
-                alt="Фото John Smith"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/nic-kucher-480.jpg 1x,
+                    ./images/nic-kucher-960.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/nic-kucher-270.jpg 1x,
+                    ./images/nic-kucher-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/nic-kucher-354.jpg 1x,
+                    ./images/nic-kucher-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="worker__img"
+                  src="./images/nic-kucher-270.jpg"
+                  loading="lazy"
+                  alt="Фото Николай Кучеренко"
+                />
+              </picture>
               <div class="worker__card-content">
                 <h3 class="worker__name">Николай Кучеренко</h3>
                 <p class="worker__position">Product Designer</p>
@@ -335,16 +364,36 @@
             </li>
             <!-- Ольга Иванова -->
             <li class="worker">
-              <img
-                class="worker__img"
-                srcset="
-                  ./images/o-ivanova-mob-480.jpg 1x,
-                  ./images/o-ivanova-mob-960.jpg 2x
-                "
-                src="./images/o-ivanova-mob-480.jpg"
-                loading="lazy"
-                alt="Фото Marta Stewart"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/o-ivanova-480.jpg 1x,
+                    ./images/o-ivanova-960.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/o-ivanova-270.jpg 1x,
+                    ./images/o-ivanova-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/o-ivanova-354.jpg 1x,
+                    ./images/o-ivanova-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="worker__img"
+                  src="./images/o-ivanova-270.jpg"
+                  loading="lazy"
+                  alt="Фото Marta Stewart"
+                />
+              </picture>
               <div class="worker__card-content">
                 <h3 class="worker__name">Ольга Иванова</h3>
                 <p class="worker__position">Frontend Developer</p>
@@ -386,16 +435,36 @@
             </li>
             <!-- Андрей Шевченко -->
             <li class="worker">
-              <img
-                class="worker__img"
-                srcset="
-                  ./images/a-shevch-mob-480.jpg 1x,
-                  ./images/a-shevch-mob-960.jpg 2x
-                "
-                src="./images/a-shevch-mob-480.jpg"
-                loading="lazy"
-                alt="Фото Robert Jakis"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/a-shevch-480.jpg 1x,
+                    ./images/a-shevch-960.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/a-shevch-270.jpg 1x,
+                    ./images/a-shevch-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/a-shevch-354.jpg 1x,
+                    ./images/a-shevch-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="worker__img"
+                  src="./images/a-shevch-270.jpg"
+                  loading="lazy"
+                  alt="Фото Андрей Шевченко"
+                />
+              </picture>
               <div class="worker__card-content">
                 <h3 class="worker__name">Андрей Шевченко</h3>
                 <p class="worker__position">Marketing</p>
@@ -437,16 +506,36 @@
             </li>
             <!-- Иван Николаев -->
             <li class="worker">
-              <img
-                class="worker__img"
-                srcset="
-                  ./images/i-nicol-mob-480.jpg 1x,
-                  ./images/i-nicol-mob-960.jpg 2x
-                "
-                src="./images/i-nicol-mob-480.jpg"
-                loading="lazy"
-                alt="Фото Martin Doe"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/i-nicol-480.jpg 1x,
+                    ./images/i-nicol-960.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/i-nicol-270.jpg 1x,
+                    ./images/i-nicol-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/i-nicol-354.jpg 1x,
+                    ./images/i-nicol-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="worker__img"
+                  src="./images/i-nicol-270.jpg"
+                  loading="lazy"
+                  alt="Фото Иван Николаев"
+                />
+              </picture>
               <div class="worker__card-content">
                 <h3 class="worker__name">Иван Николаев</h3>
                 <p class="worker__position">UI Designer</p>
